@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import AddToCartButton from '@/components/products/AddToCartButton';
 
-export default function ProductViewPage() {
+function ProductViewPage() {
   const search = useSearchParams();
   const id = search.get('id');
   const [product, setProduct] = useState<any>(null);
@@ -44,5 +44,13 @@ export default function ProductViewPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function Page() {
+  return (
+    <Suspense fallback={<div className="p-8">Loading...</div>}>
+      <ProductViewPage />
+    </Suspense>
   );
 }

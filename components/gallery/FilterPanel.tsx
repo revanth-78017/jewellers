@@ -185,6 +185,7 @@ export default function FilterPanel({ filters, onFiltersChange }: FilterPanelPro
             <div>
               <h4 className="font-semibold text-gray-900 dark:text-white mb-3">
                 Sort By
+              </h4>
               <select
                 value={filters.sortBy || 'date'}
                 onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>

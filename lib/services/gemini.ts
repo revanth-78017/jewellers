@@ -6,7 +6,7 @@ const genAI = new GoogleGenerativeAI(apiKey);
 
 export async function generateJewelryDesign(prompt: string, material?: string, gemstone?: string) {
   try {
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-exp' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
     
     // Enhanced prompt for jewelry design
     const enhancedPrompt = `
@@ -138,4 +138,3 @@ Provide brief descriptions for each suggestion.
     };
   }
 }
-

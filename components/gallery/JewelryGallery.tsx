@@ -144,7 +144,9 @@ export default function JewelryGallery() {
         }
       } else if (append) {
         // When loading more, only append Unsplash/gallery images (admin products stay at top)
-        setImages(prev => [...prev, ...newImages]);
+        const updatedImages = [...images, ...newImages];
+        setImages(updatedImages);
+        setGalleryImages(updatedImages);
       } else {
         // On initial / non-append load, try to fetch admin products and prepend them
         try {
@@ -194,7 +196,7 @@ export default function JewelryGallery() {
     setPage(1);
     setHasMore(true);
     fetchImages(selectedType === 'all' ? undefined : selectedType, searchQuery, 1, false);
-  }, [selectedType, showOnlyProducts]);
+  }, [selectedType, showOnlyProducts, searchQuery]);
 
   const handleSearch = () => {
     setPage(1);

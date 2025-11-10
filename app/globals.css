@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+@theme {
+  /* Refined Royal Gold Palette */
+  --color-midnight: #0f0f0f;
+  --color-ebony: #181818;
+  --color-jet: #202020;
+
+  /* Gold tones (warm, premium) */
+  --color-gold-50: #FFFBEA;
+  --color-gold-100: #FFF3C4;
+  --color-gold-200: #FCE588;
+  --color-gold-300: #FADB5F;
+  --color-gold-400: #F7C948;
+  --color-gold-500: #E0B437; /* main gold */
+  --color-gold-600: #C49A25;
+  --color-gold-700: #A17C1B;
+  --color-gold-800: #86630E;
+  --color-gold-900: #614509;
+
+  /* Complementary ivory-white palette */
+  --color-ivory-50: #FFFFFF;
+  --color-ivory-100: #FCFBF9;
+  --color-ivory-200: #F8F6F1;
+  --color-ivory-300: #F2EEE5;
+  --color-ivory-400: #E9E2D0;
+  --color-ivory-500: #DDD1B8;
+
+  /* Fonts */
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Poppins', sans-serif;
+}
+
+:root {
+  --background: #fffdf7;
+  --foreground: #1a1a1a;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --primary: #E0B437;
+  --primary-foreground: #1a1a1a;
+  --secondary: #f9f7f2;
+  --secondary-foreground: #202020;
+  --accent: #C49A25;
+  --muted: #f5f3f0;
+  --border: #ece8dc;
+  --ring: #E0B437;
+
+  /* Glassmorphism refinement */
+  --glass-bg: rgba(255, 255, 255, 0.65);
+  --glass-border: rgba(224, 180, 55, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  transition: all 0.3s ease-in-out;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Glass effect */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: 1rem;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+}
+
+.dark .glass {
+  background: rgba(24, 24, 24, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Gradients */
+.gradient-gold {
+  background: linear-gradient(135deg, #FFF3C4, #E0B437, #C49A25);
+}
+.gradient-elegant {
+  background: linear-gradient(120deg, #ffffff, #f9f6e7);
+}
+.gradient-luxury {
+  background: linear-gradient(135deg, #E0B437, #A17C1B);
+}
+
+/* Animated shine */
+@keyframes goldShine {
+  0% { background-position: -150% 0; }
+  100% { background-position: 150% 0; }
+}
+.shine {
+  background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(255,255,255,0.6), rgba(255,255,255,0.1));
+  background-size: 200% 100%;
+  animation: goldShine 3s linear infinite;
+}
+
+/* Buttons */
+.btn {
+  @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform active:scale-95;
+}
+
+.btn-gold {
+  @apply text-black bg-gold-500 hover:bg-gold-600 shadow-md hover:shadow-lg;
+}
+
+.btn-outline-gold {
+  @apply border-2 border-gold-500 text-gold-700 hover:bg-gold-50;
+}
+
+.btn-glass {
+  @apply bg-white/30 backdrop-blur-md border border-white/20 text-black hover:bg-white/50;
+}
+
+/* Cards */
+.card {
+  @apply p-6 rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Floating Action Button */
+.fab {
+  @apply fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-black flex items-center justify-center rounded-full shadow-lg hover:bg-gold-600 transition-transform duration-300 hover:scale-110;
+}
+
+/* Skeleton Loading */
+.skeleton {
+  @apply animate-pulse bg-gray-200 rounded-lg;
+}
+
+/* Input Fields */
+input, textarea, select {
+  @apply border border-gray-300 rounded-lg px-3 py-2 w-full focus:ring-2 focus:ring-gold-400 focus:outline-none;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  color: var(--foreground);
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* Toastify customization */
+.Toastify__toast {
+  font-family: var(--font-sans);
+  border-radius: 0.75rem;
+  background: #fffbe9;
+  color: #111;
+  border-left: 4px solid var(--primary);
+}

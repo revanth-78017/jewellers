@@ -1,0 +1,122 @@
+[
+  {
+    "id": "8431c6fa-6f41-4716-8935-72378922323e",
+    "name": "earings",
+    "type": "ring",
+    "material": "gold",
+    "gemstone": "none",
+    "imageUrl": "https://media.grtjewels.com/catalog/product/cache/529b66f1f87de88553487754ab9e4dd4/7/6/760a0001257_base.jpg",
+    "price": 2500,
+    "createdAt": "2025-11-10T06:26:09.073Z"
+  },
+  {
+    "id": "4259c362-6e36-44bd-a4d6-9c3c56c0237c",
+    "name": "Test Ring from API",
+    "type": "ring",
+    "material": "gold",
+    "gemstone": "none",
+    "imageUrl": "https://images.unsplash.com/photo-1519741499649-84b6b6d0b6d6?w=1200",
+    "price": 199.99,
+    "createdAt": "2025-11-09T09:54:02.606Z"
+  },
+  {
+    "id": "27e935ff-bb52-465b-bb8f-c92697db490a",
+    "name": "butterfly earings",
+    "type": "earring",
+    "material": "gold",
+    "gemstone": "diamond",
+    "imageUrl": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSIUQBOxvW6R_G3B3f_iENnko-2X9a-g53FZBI542bAfNqvVDxbHv4ul8xJcMj2-qsbsL4jgf8IizVFVmKW1_1O6PfiGay9Uf639nDBji_zHVmgHLEx5XbQvwk",
+    "price": 1200,
+    "createdAt": "2025-11-09T09:37:42.632Z"
+  },
+  {
+    "id": "432a85cf-e15a-4936-b34b-aee8fc0b32a2",
+    "name": "11111",
+    "type": "ring",
+    "material": "gold",
+    "gemstone": "none",
+    "imageUrl": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRaua9PRyNRDXpmR83qh2Uip-Ek8-gNkNKEMtZASblBaIdyfRiH_ZvLF2bKCY1geasE87r6-kHuwnhL6fP_qqNo6OjGOquov9XjzqAWRcvxlXs7qywXldh2Mw",
+    "price": 1,
+    "createdAt": "2025-11-09T09:12:32.476Z"
+  },
+  {
+    "id": "fd6db88c-f744-42e6-94d4-7accb6b0d93f",
+    "name": "ring",
+    "type": "ring",
+    "material": "gold",
+    "gemstone": "none",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQRgskdw0PCjj3lqfIKLooew66QSgrynCbew6SYlJtuCTuShnVgd_Q6oP-X2joGaeJhxzE5pyk2dukAXH11uizUfkVefLnQug6iAzM2sUR0",
+    "price": 1500,
+    "createdAt": "2025-11-09T08:59:05.526Z"
+  },
+  {
+    "id": "71857128-da21-4b6f-9a95-4148725a7954",
+    "name": "rr",
+    "type": "ring",
+    "material": "gold",
+    "gemstone": "none",
+    "imageUrl": "",
+    "price": 0,
+    "createdAt": "2025-11-09T08:57:58.319Z"
+  },
+  {
+    "id": "afda7e19-788c-4aa3-b52e-dc8df810f421",
+    "name": "ring",
+    "type": "ring",
+    "material": "gold",
+    "gemstone": "none",
+    "imageUrl": "",
+    "price": 0,
+    "createdAt": "2025-11-09T08:56:50.597Z"
+  },
+  {
+    "id": "e214d3c9-3fba-42c8-a4d6-d76f23a1efc7",
+    "name": "ring",
+    "type": "ring",
+    "material": "gold",
+    "gemstone": "none",
+    "imageUrl": "",
+    "price": 0,
+    "createdAt": "2025-11-09T08:56:43.393Z"
+  },
+  {
+    "id": "ccec2e17-02d8-46e7-9c32-0621e4eaf2ab",
+    "name": "ring",
+    "type": "ring",
+    "material": "gold",
+    "gemstone": "none",
+    "imageUrl": "",
+    "price": 10000,
+    "createdAt": "2025-11-09T08:56:30.910Z"
+  },
+  {
+    "id": "becfe0d1-1ebd-49f5-88b5-beb677e8b544",
+    "name": "flower ring",
+    "type": "ring",
+    "material": "gold",
+    "gemstone": "none",
+    "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQdCzK7XWe3SuA8XWG5F09MKZa600Q3uztQE6cMH8fmcOFC7yv1S74o6cIbseHgMt-WE9h0AagKxRvS7bAbxXcF1nbyP53SWKuFn0M6iLRN",
+    "price": 1000,
+    "createdAt": "2025-11-09T08:54:00.547Z"
+  },
+  {
+    "id": "c426ed20-6c58-411d-bfc5-40dc2f7b581f",
+    "name": "Test Ring from API",
+    "type": "ring",
+    "material": "gold",
+    "gemstone": "none",
+    "imageUrl": "https://images.unsplash.com/photo-1519741499649-84b6b6d0b6d6?w=1200",
+    "price": 199.99,
+    "createdAt": "2025-11-09T08:51:47.239Z"
+  },
+  {
+    "id": "31955b03-beb9-4e1d-9371-d7b81013e341",
+    "name": "Test Ring from API",
+    "type": "ring",
+    "material": "gold",
+    "gemstone": "none",
+    "imageUrl": "https://images.unsplash.com/photo-1519741499649-84b6b6d0b6d6?w=1200",
+    "price": 199.99,
+    "createdAt": "2025-11-09T08:49:23.916Z"
+  }
+]

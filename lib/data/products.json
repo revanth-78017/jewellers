@@ -1,0 +1,22 @@
+[
+  {
+    "id": "aeec0fa0-4acc-404a-bae3-943325b2b9e1",
+    "name": "Test Ring from API",
+    "type": "ring",
+    "material": "gold",
+    "gemstone": "none",
+    "imageUrl": "https://images.unsplash.com/photo-1519741499649-84b6b6d0b6d6?w=1200",
+    "price": 199.99,
+    "createdAt": "2025-11-09T08:47:03.310Z"
+  },
+  {
+    "id": "0d39d251-ff94-4f63-a612-b0e8a6e55d54",
+    "name": "ring",
+    "type": "ring",
+    "material": "gold",
+    "gemstone": "diamond",
+    "imageUrl": "",
+    "price": 1000,
+    "createdAt": "2025-11-09T08:44:45.057Z"
+  }
+]
